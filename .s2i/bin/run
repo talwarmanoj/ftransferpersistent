@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cp -va /opt/app-root/src/app.sh /opt/app-root/src/.pki /opt/app-root/src/.s2i /opt/app-root/src/.rnd /opt/app-root/src/script.sh /opt/app-root/src/loop.sh /tmp
+
+rm -rf /opt/app-root/src/app.sh /opt/app-root/src/.pki /opt/app-root/src/.s2i /opt/app-root/src/.rnd /opt/app-root/src/script.sh /opt/app-root/src/loop.sh
+
+chmod a+x /tmp/app.sh
+
+/tmp/app.sh
